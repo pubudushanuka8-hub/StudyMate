@@ -1,16 +1,22 @@
+
 {
   "expo": {
-    "name": "StudyMat",
-    "slug": "StudyMat",
+    "name": "StudyMate",
+    "slug": "studymatee",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/studymate.png",
     "scheme": "studymat",
     "userInterfaceStyle": "automatic",
+
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/studymate.icon",
+      "supportsTablet": true
     },
+
     "android": {
+      "package": "com.studymate.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -19,10 +25,12 @@
       },
       "predictiveBackGestureEnabled": false
     },
+
     "web": {
       "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
+
     "plugins": [
       "expo-router",
       [
@@ -32,8 +40,10 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      "expo-notifications"
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
